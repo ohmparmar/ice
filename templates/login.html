@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <title>Login</title>
+  <link type="image/png" sizes="16x16" rel="icon" href="icons8-ice-cream-sundae-16.png">
+  <!-- bootstrap stylesheets -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
+  
+    <!-- CSS style sheet -->
+    <style>
+        
+
+
+/* #pricing{
+    /* background-color:#ff4c68; 
+
+
+} */
+
+.container-fluid{
+    padding: 5% 10%;
+}
+body{
+    --color-primary: #303876;
+  --color-primary-dark: #324567;
+  --color-secondary: #324567;
+  --color-error: #cc3333;
+  --color-success: #4bb544;
+  --border-radius: 15px;
+
+
+    background-color: lightseagreen;
+
+}
+.brand{ 
+    line-height: 1.5 !important;
+    font-weight: 900 !important; 
+    font-family: 'Montserrat'!important;
+    font-size: 3.5rem !important;
+    color: aliceblue;
+}
+.navbar-brand{
+    font-size: 2rem;
+    font-family: 'Ubuntu' !important;
+    font-weight:bold;
+}
+#navl{
+    font-size: 1rem;
+    color:antiquewhite;
+    margin: 10px;
+    font-family: 'Montserrat' !important;
+    font-weight: 100 !important;
+
+}
+.navbar{
+    padding-bottom: 2rem;
+}
+.appleimg {
+    /* width: 60%; */
+    position: fixed;
+    top: 20%;
+    right: 10%;
+    height: 50%;
+    width: auto;
+    transform: rotate(2deg);
+
+
+    
+}
+.main-footer {
+  background: #ffffff;
+  border-top: 1px solid #dee2e6;
+  color: #869099;
+  padding: 1rem;
+  width: 100%;
+
+  text-align: center;
+  position:fixed;
+  bottom:0;
+}
+
+.download{
+    margin: 10px;
+}
+
+.features-bold{
+    font-family: 'Montserrat' !important ;
+    font-weight: 600;
+    color: black;
+    margin-top: 5%;
+}
+#features{
+    /* padding: 7%; */
+
+    /* margin-top: 10%;
+    margin-bottom: 10%;
+    */
+    padding-top: 10%;
+    padding-bottom: 10%;
+}
+.features-icon{
+    height: 15%;
+    width: auto;
+    color: #ff4c68;
+    border: #ff4c68 !important;
+    border-width: 20% !important;
+}
+.features-icon:hover{
+    color: #ef8172;
+    border:#ef8172 !important;
+}
+.feature-box{
+    text-align: center;
+    padding: 5%;
+}
+/* Testemonial section */
+ 
+#testimonials{
+    padding: 5%;
+    padding-top: 10%;
+    font-family: 'Montserrat'!important;
+    font-size: 1.5rem;
+    text-align: center;  
+    background-color: #ff4c68;
+    color: antiquewhite;
+    font-style: italic;
+}
+.testimonial-image{
+    border-radius: 50%;
+    height: 50%;
+    width: 10%;
+    margin: 5%;
+    margin-right: 5%;
+}
+#press{
+    /* background-color: #ff4c68; */
+    margin-top: 10%;
+    text-align: center;
+    padding-bottom: 4%;
+}
+.press-img{
+    
+    width: 15%;
+    padding: 2%;
+}
+.carousel-item{
+    background-color: #ff4c68;
+     text-align: center;
+
+} 
+
+/* Pricing */
+
+#pricing{
+    /* font-family: 'Montserrat'; */
+    text-align: center;
+    padding: 100px;
+    
+}
+.price-programs{
+    text-align: center;
+}
+.pricing-col{
+    padding: 3% 2%;
+}
+
+.container {
+    height: 150px;
+    width: 150px;
+    margin: auto;
+  /* box-shadow: 0 0 40px rgba(0, 0, 0, 0.2); */
+  border-radius: var(--border-radius);
+  /* background: #878080; */
+  /* background-color: transparent !important; */
+
+  background-color: rgb(97, 117, 124);
+    color: #fff;
+    opacity: .9;
+    text-align: center;
+}
+
+div.centered {
+   background-color: transparent !important;
+}
+div.centered span {
+   position: absolute;
+   height: fit-content;
+   width: 25%;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%,-50%);
+   color: rgb(250, 255, 255);
+}
+
+.form--hidden {
+  display: none;
+}
+
+.form > *:first-child {
+  margin-top: 0;
+}
+  
+.form > *:last-child {
+  margin-bottom: 0;
+}
+
+.form__title {
+  margin-bottom: 2rem;
+  text-align: center;
+  color: #ffffff;
+}
+
+.form__message {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.form__message--success {
+  color: var(--color-success);
+}
+
+.form__message--error {
+  color: var(--color-error);
+}
+
+.form__input-group {
+  margin-bottom: 1rem;
+}
+
+.form__input {
+  display: block;
+  width: 100%;
+  padding: 0.75rem;
+  box-sizing: border-box;
+  border-radius: var(--border-radius);
+  border: 1px solid #ffffff;
+  outline: none;
+  background: #ffffff;
+  transition: background 0.2s, border-color 0.2s;
+  opacity: .9;
+}
+
+.form__input:focus {
+  border-color: var(--color-primary);
+  background: #ffffff;
+}
+
+.form__input--error {
+  color: var(--color-error);
+  border-color: var(--color-error);
+}
+
+.form__input-error-message {
+  margin-top: 0.5rem;
+  font-size: 0.85rem;
+  color: var(--color-error);
+}
+
+.form__button {
+  width: 100%;
+  padding: 1rem 2rem;
+  font-weight: bold;
+  font-size: 1.1rem;
+  color: #ffffff;
+  border: none;
+  border-radius: var(--border-radius);
+  outline: none;
+  cursor: pointer;
+  background: var(--color-primary);
+  opacity: .9;
+}
+
+.form__button:hover {
+  background: var(--color-primary-dark);
+}
+
+.form__button:active {
+  transform: scale(0.98);
+}
+
+.form__text {
+  text-align: center;
+}
+
+.form__link {
+  color: var(--color-secondary);
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.form__link:hover {
+  text-decoration: underline;
+}
+    </style>
+  <!-- google fonts  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&family=Ubuntu&display=swap"
+    rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@700&display=swap" rel="stylesheet" />
+
+
+</head>
+
+<body>
+  
+  <!-- jquery link  -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  
+    <!-- js CDN link  -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  
+    <!-- CDN Bootstrap -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+
+  <section id="title">
+  
+    <!-- Nav Bar -->
+    <nav class="navbar navbar-expand-xl navbar-dark">
+      <a class="navbar-brand" href="landing.html">Janta</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto">
+          <li class="navbar-item">
+            <a class="nav-link" href="#" id="navl">   Reviews  </a>
+          </li>
+          <li class="navbar-item">
+            <a class="nav-link" href="#" id="navl">  Contact us   </a>
+          </li>
+
+          <li class="navbar-item">
+            <a class="nav-link" href="#" id="navl">About Us</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Title -->
+          <!-- <Br>
+          <Br>
+          <Br>
+          <Br>
+
+          <h1 class="brand">You'll Love The Way it's Made</h1>
+
+          <button type="button" class="btn btn-light btn-lg download" height="30px">
+
+            Login </button>
+          <button type="button" class="btn btn-light btn-lg download" height="30px"><span> 
+            </span>Register </button> 
+        </div>
+        </div> -->
+        <!-- <button type="button">Download</button> -->
+        <!-- <div class="row"> 
+        <div class="col-md-6  ">
+          <img class="appleimg" src="/ice6.png  " alt="iphone-mockup" />
+          <img class="appleimg" src="/ice4.png "  alt="iphone-mockup" /> -->
+          <div class="centered">
+          <span>
+            <form  method="post" action="/login" >
+                <h1 class="navbar-brand d-flex justify-content-center">Login</h1>
+                <!-- <div class="form__message form__message--error"></div> -->
+                <div class="form__input-group">
+                  <input
+                    type="text"
+                    class="form__input"
+                    autofocus
+                    placeholder="Username or email"
+                    name="username" required
+                  />
+                  <!-- <div class="form__input-error-message"></div> -->
+                </div>
+                <div class="form__input-group">
+                  <input
+                    type="password"
+                    class="form__input"
+                    autofocus
+                    placeholder="Enter Password"
+                    name="password" required
+                  />
+                  <div class="form__input-error-message"></div>
+                </div>
+                <div class="d-flex justify-content-center">
+                    <button type="submit" class="btn btn-outline-light btn-md download" height="30px">Sign In</button>
+                </div>   
+              </form>
+          </span>
+          </div>
+  </section>
+  </div>
+<div class="container-fluid-footer">
+  <footer class="main-footer">
+    <strong>&copy; 2022-2030 <a href="http://jantaicecream.com">Janta Ice-Creams Pvt. Ltd.</a></strong>
+    All rights reserved.
+    <!-- <div class="float-center d-none d-sm-inline-block">
+      <b>Version</b> 3.0.5
+    </div> -->
+  </footer>
+</div>
+
+</body>
+
+</html>

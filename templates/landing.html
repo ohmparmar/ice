@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <title>Janta - Ice Cream</title>
+  <link type="image/png" sizes="16x16" rel="icon" href="icons8-ice-cream-sundae-16.png">
+  <!-- bootstrap stylesheets -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
+  
+    <!-- CSS style sheet -->
+    <style>
+        
+
+
+/* #pricing{
+    /* background-color:#ff4c68; 
+
+
+} */
+.container-fluid{
+    padding: 5% 10%;
+}
+body{
+    background-color: lightseagreen;
+}
+.brand{ 
+    line-height: 1.5 !important;
+    font-weight: 900 !important; 
+    font-family: 'Montserrat'!important;
+    font-size: 3.5rem !important;
+    color: aliceblue;
+}
+.navbar-brand{
+    font-size: 3rem;
+    font-family: 'Ubuntu' !important;
+    font-weight:bold;
+}
+#navl{
+    font-size: 1rem;
+    color:#ffffff;
+    margin: 10px;
+    font-family: 'Montserrat' !important;
+    font-weight: 100 !important;
+
+}
+.navbar{
+    padding-bottom: 2rem;
+}
+.appleimg {
+    /* width: 60%; */
+    transform: rotate(2deg);
+    height:110%;
+     width:120%;
+
+
+    
+}
+.main-footer {
+  background: #ffffff;
+  border-top: 1px solid #dee2e6;
+  color: #869099;
+  padding: 1rem;
+  margin:auto;
+  text-align: center;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+}
+.download{
+    margin: 10px;
+}
+
+.features-bold{
+    font-family: 'Montserrat' !important ;
+    font-weight: 600;
+    color: black;
+    margin-top: 5%;
+}
+#features{
+    /* padding: 7%; */
+
+    /* margin-top: 10%;
+    margin-bottom: 10%;
+    */
+    padding-top: 10%;
+    padding-bottom: 10%;
+}
+.features-icon{
+    height: 15%;
+    width: auto;
+    color: #ff4c68;
+    border: #ff4c68 !important;
+    border-width: 20% !important;
+}
+.features-icon:hover{
+    color: #ef8172;
+    border:#ef8172 !important;
+}
+.feature-box{
+    text-align: center;
+    padding: 5%;
+}
+/* Testemonial section */
+ 
+#testimonials{
+    padding: 5%;
+    padding-top: 10%;
+    font-family: 'Montserrat'!important;
+    font-size: 1.5rem;
+    text-align: center;  
+    background-color: #ff4c68;
+    color: antiquewhite;
+    font-style: italic;
+}
+.testimonial-image{
+    border-radius: 50%;
+    height: 50%;
+    width: 10%;
+    margin: 5%;
+    margin-right: 5%;
+}
+#press{
+    /* background-color: #ff4c68; */
+    margin-top: 10%;
+    text-align: center;
+    padding-bottom: 4%;
+}
+.press-img{
+    
+    width: 15%;
+    padding: 2%;
+}
+.carousel-item{
+    background-color: #ff4c68;
+     text-align: center;
+
+} 
+
+/* Pricing */
+
+#pricing{
+    /* font-family: 'Montserrat'; */
+    text-align: center;
+    padding: 100px;
+    
+}
+.price-programs{
+    text-align: center;
+}
+.pricing-col{
+    padding: 3% 2%;
+}
+    </style>
+  <!-- google fonts  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&family=Ubuntu&display=swap"
+    rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@700&display=swap" rel="stylesheet" />
+
+
+</head>
+
+<body>
+  
+  <!-- jquery link  -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  
+    <!-- js CDN link  -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  
+    <!-- CDN Bootstrap -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+
+  <section id="title">
+  
+    <!-- Nav Bar -->
+    <nav class="navbar navbar-expand-xl navbar-dark">
+      <a class="navbar-brand" href="#">Janta</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto">
+          <li class="navbar-item">
+            <a class="nav-link" href="#" id="navl">   Reviews  </a>
+          </li>
+          <li class="navbar-item">
+            <a class="nav-link" href="#" id="navl">  Contact us   </a>
+          </li>
+
+          <li class="navbar-item">
+            <a class="nav-link" href="#" id="navl">About Us</a>
+          </li>
+          
+          <li class="navbar-item">
+            <a class="nav-link" href="/login" id="navl">Login</a>
+          </li>
+
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Title -->
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-6">
+          <Br>
+          <Br>
+          <Br>
+          <Br>
+
+          <h1 class="brand">You'll Love The Way it's Made</h1>
+
+          <!-- <button type="button" class="btn btn-light btn-lg download" height="30px">
+
+            Login </button>
+          <button type="button" class="btn btn-light btn-lg download" height="30px"><span> 
+            </span>Register </button>  -->
+        </div>
+        <!-- </div> -->
+        <!-- <button type="button">Download</button> -->
+        <!-- <div class="row"> -->
+        <div class="col-md-6  ">
+          <img class="appleimg" src="/static/ice6.png  " alt="iphone-mockup" />
+          <!-- <img class="appleimg" src="/ice4.png "  alt="iphone-mockup" /> -->
+
+        </div>
+        </div>
+    
+  </section>
+  </div>
+
+  <div class="container-fluid-footer">
+    <footer class="main-footer">
+      <strong>&copy; 2022-2030 <a href="http://jantaicecream.com">Janta Ice-Creams Pvt. Ltd.</a></strong>
+      All rights reserved.
+      <!-- <div class="float-center d-none d-sm-inline-block">
+        <b>Version</b> 3.0.5
+      </div> -->
+    </footer>
+  </div>
+
+</body>
+
+</html>
